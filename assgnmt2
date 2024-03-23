@@ -73,9 +73,23 @@ Enter github account password == use personal access token
 
 Ticket 03 - Maven:
 Task: Create a Maven Project
+mkdir jp3 
+clone our github repo inside the jp3 directory. The github repo should have pom.xml and src in it. pom.xml has dependencies and plugins which enables to develop a build script.
+
 Use Maven to create a new Java project with a simple directory structure.
+#ls into the directory eg. jp3
+ls jp3
+pom.xml  target  Team2
+#after ls, run the command mvn clean package
+mvn clean package
+
 Task: Build Project with Maven
+to build maven project, we run the command:
+mvn clean package
+
 Use Maven to compile the Java source code, run tests, and package the project into a JAR file.
+mvn clean package
+
 Task: Add Dependencies
 Add external dependencies to the Maven project by editing the project's pom.xml file.
 Task: Maven Lifecycle
